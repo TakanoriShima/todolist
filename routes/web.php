@@ -23,3 +23,4 @@ Route::get('/welcome/second', [WelcomeController::class, 'second']);
 Route::get('/task/list', [TaskController::class, 'list']);
 Route::get('/test', [TestController::class, 'index']);
 Route::post('/test/input', [TestController::class, 'input']);
+Route::post('/login', [AuthController::class, 'login']);
