@@ -1,0 +1,28 @@
+<?php
+
+namespace Database\Seeders;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+
+use Illuminate\Database\Seeder;
+
+class AdminAuthUser extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        //
+        DB::table('admin_users')->insert([
+            'login_id' => 'hogemin',
+            'password' => Hash::make('pass'),
+        ]);
+        DB::table('admin_users')->insert([
+            'login_id' => 'admin',
+            'password' => Hash::make('admin'),
+        ]);
+    }
+}
