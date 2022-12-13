@@ -50,9 +50,9 @@ Route::prefix('/admin')->group(function () {
     Route::get('/logout', [AdminAuthController::class, 'logout']);
 });
 
-// テスト用
-Route::get('/welcome', [WelcomeController::class, 'index']);
-Route::get('/welcome/second', [WelcomeController::class, 'second']);
-// form入力テスト用
-Route::get('/test', [TestController::class, 'index']);
-Route::post('/test/input', [TestController::class, 'input']);
+// // テスト用
+// Route::get('/welcome', [WelcomeController::class, 'index']);
+// Route::get('/welcome/second', [WelcomeController::class, 'second']);
+// // form入力テスト用
+// Route::get('/test', [TestController::class, 'index']);
+// Route::post('/test/input', [TestController::class, 'input']);
