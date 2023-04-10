@@ -22,7 +22,7 @@
         <hr>
         <hr>
         <menu label="リンク">
-        <a href="/task/list">タスク一覧</a><br>
-        <a href="/logout">ログアウト</a><br>
+        <a href="{{ route('task.list') }}">タスク一覧</a><br>
+        <a href="{{ route('logout') }}">ログアウト</a><br>
         </menu>
 @endsection

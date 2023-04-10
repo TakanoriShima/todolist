@@ -25,7 +25,7 @@
                 @endforeach
                 </div>
             @endif
-            <form action="/task/register" method="post">
+            <form action="{{ route('task.register') }}" method="post">
                 @csrf
                 タスク名:<input name="name" value="{{ old('name') }}"><br>
                 期限:<input name="period" type="date" value="{{ old('period') }}"><br>
@@ -37,7 +37,7 @@
             </form>
 
         <h1>タスクの一覧</h1>
-        <a href="/task/csv/download">CSVダウンロード</a><br>
+        <a href="{{ route('task.csv.download') }}">CSVダウンロード</a><br>
         <table border="1">
         <tr>
             <th>タスク名
@@ -76,6 +76,6 @@
         <br>
         <hr>
         <menu label="リンク">
-        <a href="/logout">ログアウト</a><br>
+        <a href="{{ route('logout') }}">ログアウト</a><br>
         </menu>
 @endsection
