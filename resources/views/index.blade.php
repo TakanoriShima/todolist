@@ -2,7 +2,7 @@
 
 {{-- メインコンテンツ --}}
 @section('contets')
-        <h1>ログイン</h1>
+        <h1 style="color: red">ログイン</h1>
         @if ($errors->any())
             <div>
             @foreach ($errors->all() as $error)
